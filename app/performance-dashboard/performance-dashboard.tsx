@@ -54,7 +54,7 @@ const MetricGrid = React.memo(function MetricGrid({
 
 function PerformanceDashboard() {
   const [metrics, setMetrics] = useState(
-    Array.from({ length: 30000 }, (_, index) => ({
+    Array.from({ length: 50000 }, (_, index) => ({
       id: index,
       name: `Metric ${index + 1}`,
       value: Math.floor(Math.random() * 1000),
