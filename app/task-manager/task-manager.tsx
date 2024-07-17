@@ -32,7 +32,7 @@ function Statistics({
   const score = secretAlgorithm();
 
   return (
-    <div className="bg-blue-100 p-4 rounded-lg">
+    <div className="bg-black text-white p-4 rounded-lg">
       <h3 className="text-lg font-semibold">Statistics</h3>
       <p>Tasks: {taskCount}</p>
       <p>Complexity Score: {score.toFixed(2)}</p>
@@ -60,7 +60,7 @@ function TaskManager() {
   const tags = ["Cool", "Fresh"];
 
   return (
-    <div className="min-h-screen p-8 bg-gray-100">
+    <div className="min-h-screen p-8 bg-gradient-to-b from-blue-100 to-purple-100">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">Task Manager</h1>
         <div className="mb-4">

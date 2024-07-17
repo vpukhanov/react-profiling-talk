@@ -74,7 +74,7 @@ function ThemeSwitcher() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen p-8 flex items-center bg-gradient-to-b from-blue-100 to-purple-100">
       <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold mb-6">Theme Switcher</h1>
         <AppContext.Provider value={contextValue}>

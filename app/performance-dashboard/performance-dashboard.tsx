@@ -71,7 +71,7 @@ function PerformanceDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-purple-100 p-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">Performance Dashboard</h1>
         <MetricGrid
