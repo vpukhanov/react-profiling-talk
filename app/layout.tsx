@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Т—Ж React Performance Talk",
+  title: "Т—Ж React Profiling Talk",
 };
 
 export default function RootLayout({
