@@ -13,7 +13,7 @@ const AppContext = createContext({
   },
 });
 
-function ThemedButton() {
+const ThemedButton = React.memo(function ThemedButton() {
   const { theme } = useContext(AppContext);
 
   secretAlgorithm();
@@ -23,9 +23,9 @@ function ThemedButton() {
       Themed Button
     </button>
   );
-}
+});
 
-function UserInfo() {
+const UserInfo = React.memo(function UserInfo() {
   const { user } = useContext(AppContext);
 
   secretAlgorithm();
@@ -37,16 +37,16 @@ function UserInfo() {
       <p>Email: {user.email}</p>
     </div>
   );
-}
+});
 
-function Content() {
+const Content = React.memo(function Content() {
   return (
     <div className="space-y-4">
       <UserInfo />
       <ThemedButton />
     </div>
   );
-}
+});
 
 function ThemeSwitcher() {
   const [theme, setTheme] = useState({
