@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import { secretScoringAlgorithm } from "./algorithm";
+import secretAlgorithm from "@/lib/algorithm";
 
 type Task = {
   id: number;
@@ -9,7 +9,7 @@ type Task = {
 };
 
 function TaskList({ tasks }: { tasks: Task[] }) {
-  secretScoringAlgorithm();
+  secretAlgorithm();
 
   return (
     <ul className="space-y-2">
@@ -29,7 +29,7 @@ function Statistics({
   taskCount: number;
   tags: string[];
 }) {
-  const score = secretScoringAlgorithm();
+  const score = secretAlgorithm();
 
   return (
     <div className="bg-blue-100 p-4 rounded-lg">
