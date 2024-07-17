@@ -48,7 +48,6 @@ function TaskManager() {
     { id: 3, title: "Prepare presentation" },
   ]);
   const [newTaskTitle, setNewTaskTitle] = useState("");
-  const tags = ["Cool", "Fresh"];
 
   const addTask = () => {
     if (newTaskTitle.trim()) {
@@ -58,6 +57,7 @@ function TaskManager() {
   };
 
   const taskCount = useMemo(() => tasks.length, [tasks]);
+  const tags = ["Cool", "Fresh"];
 
   return (
     <div className="min-h-screen p-8 bg-gray-100">
